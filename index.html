@@ -3,14 +3,21 @@
 <head>
     <title>Calculator</title>
     <style>
-         .calculator {
+        @font-face {
+            font-family: 'DS-Digital Normal';
+            font-style: normal;
+            font-weight: normal;
+            src: local('DS-Digital Normal'), url('DS-DIGI.woff') format('woff');
+        }
+
+        .calculator {
             background-color: #3D3D5C;
             height: 300px;
             width: 250px;
             border-radius: 10px;
             padding: 20px;
             margin: 20px auto;
-            padding-top: 30px;
+            padding-top: 40px;
         }
 
         .screen {
@@ -19,8 +26,9 @@
             width: 220px;
             padding: 5px 10px;
             display: block;
-            margin: 0px auto 20px ;
+            margin: 0px auto 20px;
             font-size: 25px;
+            font-family: "Ds=Digital Normal";
         }
 
         .btn {
@@ -42,13 +50,14 @@
             justify-content: space-between;
             align-items: center;
         }
+        
         .btn-equals {
             background-color:#FF6348;
             height: 70px;
             color: white;
         }
 
-        .btn {
+        .btn:hover {
             box-shadow: 0 0 5px 0 white;
             transition: 0.5s;
         }
